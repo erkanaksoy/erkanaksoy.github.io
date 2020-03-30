@@ -35,7 +35,9 @@
     </div>
 
     <div id="main" role="main" class="container">
+      {% include toc.html html=content h_min=2 %}
       {{ content }}
+
     </div>
 
     <div class="wrapper-footer">

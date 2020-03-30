@@ -31,6 +31,8 @@ Second day you will need to write a professional pentest report while you have N
 
 If you happen to get at least 70 points from your exam and reporting, you will pass and obtain your lifetime long OSCP.
 
+You can find the course syllabus [here](https://www.offensive-security.com/documentation/penetration-testing-with-kali.pdf)
+
 ## 4. About Kali Linux
 
 Kali Linux is based on Debian and being developed by Offensive Security as a penetration testing Linux distribution. Offensive Security is not suggesting Kali Linux to be used as a daily driver but there are some people who is doing against that suggestion. I am not such a person currently but I did used Kali as a main OS for about 3 months or so. If your hardware does well with it, I can suggest it since with the 2020.1 update [LIINK], Kali is now being installed with a non-root user which is a must for security if you are using it bare-metal. I have used Ubuntu as host operating system during my lab time and exam.
@@ -113,6 +115,10 @@ Lab environment contains around 75 machines which are divided into a few differe
 
 Offsec lab environment is a simulation of a real corporate environment, network segments (VLANs) are a part of real life as well. Not all machines are equally hard and some lab machines requires information from other machines to be hacked. For example a credential you found on Machine A can be used on Machine B, so looting the machines you rooted is important. But how do you know what you can loot on owned machines? That's a skill you will need to learn during your lab time and it is equally required in real life. Generally speaking, look for files in user home directories, try to get hashes from windows hosts, check /etc/shadow file, application and database config files. I highly suggest to have usernames, passwords, hashes, username:password files and take note all of credentials you gathered for future use on different machines. You should also check arp cache of each machine after rooting to be able to detect related machines (arp cache gets filled once a machine talks to another), run tcpdump to see related machines, check web application's access logs etc.
 
+As a general rule, you can use /usr/share/wordlists/rockyou.txt file to decrypt/crack hashes you found on the lab machines and you will be most likely successful with rockyou if the hash you found meant to be cracked. You can use john or hashcat for password cracking but I used hashcat with my low end Nvidia GPU which is still thousands times faster then john since john uses CPU to crack hashes/passwords. Only other wordlists you will need are on Seclists which I gave link on resources section.
+
+You will mostly never need to bruteforce any user login page during your PWK but never forget to try default user/passwords like admin/admin admin/password and check the application default passwords from google.
+
 ![_config.yml]({{ site.baseurl }}/images/oscpGuide/labdiagram.png)
 
 ## 9. Hints for Lab Machines
@@ -155,15 +161,15 @@ While I was doing exercises on the PDF, I used autorecon for each host that I ha
 
 Once I have rooted around 30 machines on student network and got 2 network secret files, I started learning about pivoting and applied it to the dev and IT networks. I haven't touched to Admin network but in total I have rooted around 45 machines during my 2 month lab time. If you happen to hack all machines and still have lab time, try to start over without looking back to your notes.
 
-Both on labs and exam, exploit-db is the most important resource for finding exploits. You can use it's web interface or use *`searchsploit`* command line tool on kali.
+Both on labs and exam, exploit-db is the most important resource for finding exploits. You can use it's web interface or use *`searchsploit`* command line tool on Kali.
 
 Before the PWK, I had no information about how to exploit buffer overflows but everyone was saying it's easiest part of exam and I agree with it. It's generally taking 1 hour to exploit the BOF machine on exam and BOF exploitation has a strict steps unlike hacking other machines. Before exam, I took detailed notes including BOF script at each step :
 
 ![_config.yml]({{ site.baseurl }}/images/oscpGuide/bof.png)
 
-Like almost everyone else, I started by reading the exam panel and started autorecon on 2 20pts machines, then jumped to BOF machine. I think it toook like 1,5 hour for me to get done with BOF machine and all 4 machine autorecon was completed by that time. My strategy for the exam was doing 2 20pts machine after BOF for enough points to pass (25 + 20 + 20 + 5pts lab report). Well, I did BOF but got only low priv on both 20pts machines where I lost some confidence. Unlike most people said, I didn't done 10pts machine right after BOF and kept it as a confidence booster if things go wrong and I really appreciate that idea. Once I failed to own 20pts machines, I started 10pts machine and owned it in 30 minutes. Then in 1 hour I rooted a 20 pointer machine and achieved 70 points. At this stage I have like 14 hours left on my exam time, so started the 25pts machine and got low priv user in 2 or 3 hours.
+Like almost everyone else, I started by reading the exam panel and started autorecon on 2 20pts machines, then jumped to BOF machine. I think it took like 1,5 hour for me to get done with BOF machine and all 4 machine autorecon was completed by that time. My strategy for the exam was doing 2 20pts machine after BOF for enough points to pass (25 + 20 + 20 + 5pts lab report). Well, I did BOF but got only low priv on both 20pts machines where I lost some confidence. Unlike most people said, I didn't done 10pts machine right after BOF and kept it as a confidence booster if things go wrong and I really appreciate that idea. Once I failed to own 20pts machines, I started 10pts machine and owned it in 30 minutes. Then in 1 hour I rooted a 20 pointer machine and achieved 70 points. At this stage I have like 14 hours left on my exam time, so started the 25pts machine and got low priv user in 2 or 3 hours.
 
-Once I had like 10 hours exam time left after some break, I had 80 points from exam and 5 points from lab report. I decided to write the exam report and it took around 2-3 hours for me to complete the report. I went back to privilage escalation on 25 pointer and got it in less then 1 hour. On my last 3 hours I worked on PE of last 20 point machine although I already had enough points to pass. I even used metasploit for PE of last machine but I couldn't and decided to end my exam 15 minutes before the timeout.
+Once I had like 10 hours exam time left after some break, I had 80 points from exam and 5 points from lab report. I decided to write the exam report and it took around 2-3 hours for me to complete the report. I went back to privilege escalation on 25 pointer and got it in less then 1 hour. On my last 3 hours I worked on PE of last 20 point machine although I already had enough points to pass. I even used metasploit for PE of last machine but I couldn't and decided to end my exam 15 minutes before the timeout.
 
 As you may noted, I haven't slept during my exam but got 95 points in the end and my exam report was mostly ready. After ending my exam, I went to sleep for 7 hours and spent around 2 more hours for adding the last PE I got and sending the lab/exam reports. I was feeling very comfortable at this point and unlike other people who said waiting for the exam result is the hardest part of PWK, I was doing fine on the waiting game.
 
@@ -172,67 +178,43 @@ It took 6 days for Offsec to give me the good news. I got the results on a sunda
 ![_config.yml]({{ site.baseurl }}/images/oscpGuide/exam.png)
 
 ## 12. Resources
+Links here should be very helpful in your TRY HARDER journey and I highly suggest you to learn and get familiar with them before you start PWK.
 
+* A must have recon tool by Tib3rius - <https://github.com/Tib3rius/AutoRecon>
+* Tib3rius's Udemy courses for privilege escalation on Linux and Windows - <https://www.udemy.com/user/tib3rius/>
+* Tib3rius's pentesting guide - <https://github.com/Tib3rius/Penetration-Testing-Guide>
+* TJNull's OSCP guide - <https://www.netsecfocus.com/oscp/2019/03/29/The_Journey_to_Try_Harder-_TJNulls_Preparation_Guide_for_PWK_OSCP.html>
+* TJNull's OSCP like machine list from HTB and VulnHub - <https://docs.google.com/spreadsheets/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/edit#gid=1839402159>
+* Ippsec's videos - <https://www.youtube.com/channel/UCa6eh7gCkpPo5XXUDfygQQA>
+* InfoSec Prep Discord server - <https://discord.gg/QwqePB9>
+* Seclists (can be installed using apt on Kali) - <https://github.com/danielmiessler/SecLists>
+* All the things - <https://github.com/swisskyrepo/PayloadsAllTheThings>
+* Hacktricks book - <https://book.hacktricks.xyz/>
+* A lot of awesome cheat sheets by PentestMonkey - <http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet>
+* Overthewire wargames - <https://overthewire.org/wargames/>
+* Awesome privielege escalation scripts suite - <https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite>
+* Linux Smart Enumeration Script - <https://github.com/diego-treitos/linux-smart-enumeration>
+* Checklists - <https://github.com/netbiosX/Checklists>
+* Tmux - <https://github.com/rothgar/awesome-tmux>
+* Windows exploit suggester - <https://github.com/AonCyberLabs/Windows-Exploit-Suggester>
+* Linux exploit suggester - <https://github.com/jondonas/linux-exploit-suggester-2>
+* Public pentesting reports - <https://github.com/cure53/public-pentesting-reports>
+* Lazagne to get clear text passwords - <https://github.com/AlessandroZ/LaZagne>
+* Awesome buffer overflow guide - <https://github.com/justinsteven/dostackbufferoverflowgood>
+* Cheat sheets - <https://github.com/OlivierLaflamme/Cheatsheet-God>
+* Windows privelege escalation checking tool - <https://github.com/GhostPack/Seatbelt>
+* Powershell scripts - <https://github.com/samratashok/nishang>
+* Windows kernel exploits - <https://github.com/SecWiki/windows-kernel-exploits>
+* Linux kernel exploits - <https://github.com/SecWiki/linux-kernel-exploits>
+* Static binaries - <https://github.com/andrew-d/static-binaries>
+* Pentesterlab, awesome web app courses - <https://pentesterlab.com/>
+* GTFObins - <https://gtfobins.github.io/>
+* Linux shell help - <https://explainshell.com/>
+* OSCP gold mine - <http://0xc0ffee.io/blog/OSCP-Goldmine>
+* Metasploit guide by Offsec - <https://www.offensive-security.com/metasploit-unleashed>
 
 ## 13. Other things
 * Always drink enough water not only during PWK, but all your life.
 * You need to be a good researcher to be able to successful in Cyber Security field, read command outputs and especially errors carefully
 * Do not forget to spend at least 30 minutes for walking, healthy body is a must
 * If you get frustrated during labs/exam, try to get away for at least 5 minutes to chill down. Once you are back to study, try to make a list of information you got about the target machine, re-read the recon results.
-
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-
-
-# Table of Contents
-
-1. introduction/whoami
-2. overview
-3. environment
-	* virtualization
-	* note taking
-	* screenshotter
-	* terminal applications
-	* documentation
-	*	secret keys
-	*	spreadsheets
-	*	username, password, hash lists
-4. resources
-      autorecon
-      tib's priv esc courses
-      htb/vulnhub oscp like machines
-      htb ippsec videos
-      http://pentestmonkey.net/category/cheat-sheet/shells
-
-5. pre-registration requirements
-6. pdf/video content and labs
-   1. buffer overflow
-   2. vulnerability scanning
-   3. password cracking
-   4. bruteforcing
-7. exam
-   1. general
-   2. proctoring
-8. reporting
-9. music
-10. coffee - water - sport
-
-
-
-
-
-before PWK
-https://www.offensive-security.com/metasploit-unleashed/
-ippsec
-tib's courses
-linux for hackers
-
-
-A few warnings :
-
-* Screen recording in the exam is not allowed.
-https://www.offensive-security.com/offsec/pwk-oscp-faq/
-https://www.offensive-security.com/documentation/penetration-testing-with-kali.pdf
-seclists
