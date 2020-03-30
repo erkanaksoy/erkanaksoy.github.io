@@ -21,6 +21,8 @@ I am 39 years old computer engineer with 12 years enterprise level IT experience
 
 To not to get confused, I should inform you PWK(Penetration Testing with Kali Linux) is the course you take to be able to take OSCP exam.
 
+While I had some other certifications from different vendors, I can easily say that OSCP stands out by far as the best certification. First of all, it is completely practical, labs teach a lot and exam has no multiple-choice questions. If you pass, you really deserve it. 
+
 While you are purchasing PWK, you will set a starting time for your course. You will get a link to download your course materials (PDF and video) and your username/password for VPN connection to the labs/forum account on your actual lab start time. There is no way to get materials before your lab start time since the PDF/videos and labs goes head to head. With the [PWK 2020 update](https://www.offensive-security.com/offsec/pwk-2020-update/) you get a 853 pages long PDF and 17+ hours of video tutorials.
 
 You will be required to set an exam time during your lab time. OSCP exam consists of 2 phases with each is a day long. The first day, you will be given a new VPN pack to your very own 5 exam machines including:
