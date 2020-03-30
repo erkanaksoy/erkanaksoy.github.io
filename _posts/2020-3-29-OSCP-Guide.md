@@ -5,7 +5,7 @@ title: OSCP Guide
 
 This is just another OSCP guide but it will be a very detailed one.
 
-![_config.yml]({{ site.baseurl }}/images/oscp.png)
+![_config.yml]({{ site.baseurl }}/images/oscpGuide/oscp.png)
 
 ## 1. Introduction
 
