@@ -1,38 +1,38 @@
-I"�o<p>This is just another OSCP guide but it will be a very detailed one.</p>
+I"kp<p>This is just another OSCP guide but it will be a very detailed one.</p>
 
 <p><img src="/images/oscpGuide/oscp.png" alt="_config.yml" /></p>
 
 <h2 id="1-introduction">1. Introduction</h2>
 
-<p>I am 39 years old computer engineer with 12 years enterprise level IT experience as sysadmin. I have been in cybersecurity for about 3 years now mostly as a student. I have had some experience with Kali Linux and general tools of penetration testing before starting PWK.</p>
+<p>I am 39 years old computer engineer with 12 years enterprise level IT experience as sysadmin. I have been in cyber security for about 3 years mostly as a student. I had some experience with Kali Linux and general tools of penetration testing before starting PWK.</p>
 
 <h2 id="2-about-offensive-security">2. About Offensive Security</h2>
 
-<p>Offensive Security is the most respected Cyber Security certification authority, at least for me. Their certifications are very well designed and has an absolutely top level acceptance in the professional field. Aside from being a certification/training provider, they also offer Professional Services such as Penetration Testing. One last thing they do is developing Kali Linux which is the industry standard for penetration testing.</p>
+<p><a href="https://www.offensive-security.com/">Offensive Security</a> is the most respected Cyber Security certification authority, at least for me. Their certifications are very well designed and has an absolutely top level acceptance in the professional field. Aside from being a certification/training provider, they also offer Professional Services such as Penetration Testing. One last thing they do is developing <a href="https://www.kali.org/">Kali Linux</a> which is the industry standard for penetration testing.</p>
 
 <h2 id="3-about-oscp">3. About OSCP</h2>
 
-<p>OSCP is the entry level certification of Offensive Security for Penetration Testers. Although it is named as an entry level certification and it really is, penetration testing is not an entry level job. It will require a wide range of background knowledge such as using linux, web, ftp, snmp, mail, active directory, dns, telnet servers, their client side tools, and tons of pentesting tools.</p>
+<p><a href="https://www.offensive-security.com/pwk-oscp/">OSCP</a> is the entry level certification of Offensive Security for Penetration Testers. Although it is named as an <strong>entry level certification</strong> and it really is, <strong>penetration testing is NOT an entry level job.</strong> It will require a wide range of background knowledge such as using linux, web, ftp, snmp, mail, active directory, dns, telnet servers, their client side tools, and tons of pentesting tools.</p>
 
-<p>To not to get confused, I should say PWK(Penetration Testing with Kali Linux) is the course you take to be able to take OSCP exam.</p>
+<p>To not to get confused, I should inform you PWK(Penetration Testing with Kali Linux) is the course you take to be able to take OSCP exam.</p>
 
-<p>During your purchase of the PWK, you will set a starting time for your course. You will get a link to download your course materials (PDF and video) and your username/password for VPN connection to the labs and forum account on your lab start time. You have no way to get materials before your lab start time since the documentation and labs goes head to head. With the <a href="https://www.offensive-security.com/offsec/pwk-2020-update/">PWK 2020 update</a> you get a 853 pages long PDF and 17+ hours of video tutorials.</p>
+<p>While you are purchasing PWK, you will set a starting time for your course. You will get a link to download your course materials (PDF and video) and your username/password for VPN connection to the labs/forum account on your actual lab start time. There is no way to get materials before your lab start time since the PDF/videos and labs goes head to head. With the <a href="https://www.offensive-security.com/offsec/pwk-2020-update/">PWK 2020 update</a> you get a 853 pages long PDF and 17+ hours of video tutorials.</p>
 
-<p>You will be required to set an exam time during your lab time. OSCP exam consists of 2 phases which is 2 days long. The first day, you will be given a new VPN pack to your very own 5 exam machines:</p>
+<p>You will be required to set an exam time during your lab time. OSCP exam consists of 2 phases with each is a day long. The first day, you will be given a new VPN pack to your very own 5 exam machines including:</p>
 <ul>
   <li>1 Windows buffer overflow machine (25pts)</li>
-  <li>4 Hackable machines (1x25pts, 2x20pts, 1x10pts)</li>
+  <li>4 hackable machines (1x25pts, 2x20pts, 1x10pts)</li>
 </ul>
 
-<p>Second day you will need to write a professional pentest report while you have NO access to your exam machines. So during the exam you need to take required detailed screenshots of your solutions. In this second day of your exam, you have to submit your exam and lab reports to Offsec. You will get detailed information about how to submit your report(s)</p>
+<p>On the second day you will need to write a professional pentest report while <strong>you don’t have access to your exam machines.</strong> So, during the exam you need to take detailed screenshots of your solutions. In this second day of your exam, you have to submit your exam and lab reports to Offsec. You will get detailed information about how to submit your report(s)</p>
 
-<p>If you happen to get at least 70 points from your exam and reporting, you will pass and obtain your lifetime long OSCP.</p>
+<p>If you happen to get at least 70 points from your exam and reporting, you will pass and obtain your <strong>lifetime long</strong> OSCP.</p>
 
 <p>You can find the course syllabus <a href="https://www.offensive-security.com/documentation/penetration-testing-with-kali.pdf">here</a></p>
 
 <h2 id="4-about-kali-linux">4. About Kali Linux</h2>
 
-<p>Kali Linux is based on Debian and being developed by Offensive Security as a penetration testing Linux distribution. Offensive Security is not suggesting Kali Linux to be used as a daily driver but there are some people who is doing against that suggestion. I am not such a person currently but I did used Kali as a main OS for about 3 months or so. If your hardware does well with it, I can suggest it since with the 2020.1 update [LIINK], Kali is now being installed with a non-root user which is a must for security if you are using it bare-metal. I have used Ubuntu as host operating system during my lab time and exam.</p>
+<p>Kali Linux is based on Debian and being developed by Offensive Security as a penetration testing distribution. Offensive Security is not suggesting Kali Linux to be used as a daily driver but there are some people who is doing against that suggestion. I am not such a person currently but I did used Kali as a main OS for about 3 months or so. If your hardware does well with it, I can suggest using Kali as a daily driver since with the <a href="https://www.kali.org/releases/kali-linux-2020-1-release/">2020.1 update</a>, default Kali installation comes with a non-root user which is a must for security if you are using it bare-metal. I have used Ubuntu as host operating system during my lab time and exam.</p>
 
 <h2 id="5-environment-requirements">5. Environment Requirements</h2>
 
@@ -75,85 +75,85 @@
 
 <h3 id="54-terminal-application">5.4. Terminal Application</h3>
 
-<p>Since you will spend a lot of time on terminal, I highly suggest to have a good terminal application. I am pretty sure you have a lot of options but aware of 2 tools which are available on kali repositories.</p>
+<p>Since you will spend a lot of time on terminal, I highly suggest to have a good terminal application. I am pretty sure you have a lot of options but I am aware of 2 both are available on Kali repositories.</p>
 
 <ul>
   <li>tmux</li>
   <li>terminator</li>
 </ul>
 
-<p>I used and suggest tmux, it’s learning curve might take a bit but believe me, you will use it on your whole pentesting career. Tmux has a handful set of plugins <a href="https://github.com/tmux-plugins">here</a>. Tmux settings can be changed by using ~/.tmux.conf file, you can find my version of it <a href="/images/oscpGuide/tmux.conf">here</a>. If you decide to use my conf file dont forget 2 things:</p>
+<p>I used and suggest tmux, it’s learning curve might take a bit but believe me, you will use it on your whole pentesting career. Tmux has a handful set of plugins <a href="https://github.com/tmux-plugins">here</a>. Tmux settings can be changed by modifying ~/.tmux.conf file, you can find my version of it <a href="/images/oscpGuide/tmux.conf">here</a>. If you decide to use my conf file dont forget 2 things:</p>
 
 <ul>
-  <li>Change the name of the file to .tmux.conf</li>
-  <li>Install or comment out plugins in the List of Plugins section. (tpm, tmux-sensible, tmux-cpu, tmux-logging, tmux-yank)</li>
+  <li>Change the name of the file to <strong>.tmux.conf</strong></li>
+  <li>Install or comment out plugins in the <strong>List of Plugins section.</strong> (tpm, tmux-sensible, tmux-cpu, tmux-logging, tmux-yank)</li>
 </ul>
 
-<p>Tmux has a lot of advantages over terminator such as saving logs and searching through command output.</p>
+<p>Tmux has a lot of advantages over terminator such as saving session logs and searching through command output which can help you tremendously.</p>
 
 <h3 id="55-documentation">5.5. Documentation</h3>
 
-<p>You can prepare a Lab report during your lab time. It will need to have solution to the exercises in the PDF and at least 10 lab machines with different attack vectors. A lab report is not a must but should be done by everyone for a few reasons:</p>
+<p>You can prepare a lab report during your lab time. It will have solutions to the exercises in the PDF and at least 10 lab machines with different attack vectors. A lab report is not a must but should be done by everyone for a few reasons:</p>
 
 <ul>
-  <li>You can get up to 5 points in your exam by preparing the lab report. You can never know if you will need that points to pass.</li>
+  <li>You can get up to valuable 5 points in your exam by preparing the lab report. You can never know if you will need that points to pass.</li>
   <li>You will have to prepare exam report after your exam and having prepared a lab report will give you a template for exam report. It will be a good practice.</li>
   <li>Writing your findings and steps is a very good learning way.</li>
   <li>You will learn important steps of solving machines and when to take screenshots during labs.</li>
 </ul>
 
-<p>Offensive Security provides templates for both Libre Office(ODT) and Microsoft Word(DOC), I used the ODT file since I use Linux as my host machine. Do NOT forget to export both exam and lab reports as pdf before submitting.</p>
+<p>Offensive Security provides templates for both Libre Office(ODT) and Microsoft Word(DOC), I used the ODT file since I use Linux as my host machine. Do NOT forget to export both exam and lab reports as <strong>pdf</strong> before submitting.</p>
 
 <h2 id="6-discord">6. Discord</h2>
-<p>Offsec has a discord server that you can join to keep you updated. I am a member of InfoSec Prep discord server and highly suggest to join it. Here is the link to join <a href="https://discord.gg/QwqePB9">InfoSec Prep</a>. InfoSec Prep channel has a lot of OSCP holders and students that are quite helpful if you need assistance. There are some Offsec guys on the server.</p>
+<p>Offsec has a discord server that you can join to keep you updated. I am a member of InfoSec Prep discord server and highly suggest to join it. Here is the link to join <a href="https://discord.gg/QwqePB9">InfoSec Prep</a>. InfoSec Prep channel has a lot of OSCP holders and students that are quite helpful. There are also some Offsec guys on the server.</p>
 
 <h2 id="7-pre-requirements">7. Pre-requirements</h2>
 
-<p>Although not a must, basic IT and linux knowledge will help you a lot during PWK/OSCP and can shorten your lab time requirements. Do not overthink about these requirements, it shouldn’t take more then a month to get enough knowledge if you are completely new to pentesting. If you try yo be perfectly ready for PWK/OSCP, you will never be.</p>
+<p>Although not a must, basic IT and linux knowledge will help you a lot during PWK/OSCP and can shorten your lab time requirements. Do not overthink about these requirements, it shouldn’t take more then a month to get enough knowledge if you are completely new to pentesting. If you try yo be perfectly ready for PWK/OSCP, you will never be. Take a look at the resources section on this guide.</p>
 
 <h2 id="8-labs">8. Labs</h2>
 
-<p>Since the PWK got updated at 11th February, there are now 75+ hackable machines on the labs within . Lab environment is shared along with limited number of students who has a portal for reverting machines. Each student has given 12 reverts per day (not for each machine but for whole lab) and I think I never used more then 8 reverts during my 60 days lab time.</p>
+<p>Since the PWK got updated at 11th February, there are now 75+ hackable machines on the labs within . Lab environment is shared along with limited number of students who has a portal for reverting machines. Each student has given 12 reverts per day (not for each machine but for whole lab per day). Although 12 might be looking low, I never used more then 8 reverts during my 60 days lab time. Also, you can ask Offsec support if you are out of revert.</p>
 
 <p>Lab environment contains around 75 machines which are divided into a few different network segments. You will start hacking machines on student network and try to hack ones at admin network as a final goal. Note that IT, Developement and Admin networks are not directly accessible from your VPN connection while Student Network is and you are supposed to pivot through some dual homed machines in student network. You should check machine ip addresses carefully if you happen to root them. Along with proof.txt file some machines has network-secret.txt file that you can use on your web panel to access to reverting those network machines.</p>
 
-<p>Offsec lab environment is a simulation of a real corporate environment, network segments (VLANs) are a part of real life as well. Not all machines are equally hard and some lab machines requires information from other machines to be hacked. For example a credential you found on Machine A can be used on Machine B, so looting the machines you rooted is important. But how do you know what you can loot on owned machines? That’s a skill you will need to learn during your lab time and it is equally required in real life. Generally speaking, look for files in user home directories, try to get hashes from windows hosts, check /etc/shadow file, application and database config files. I highly suggest to have usernames, passwords, hashes, username:password files and take note all of credentials you gathered for future use on different machines. You should also check arp cache of each machine after rooting to be able to detect related machines (arp cache gets filled once a machine talks to another), run tcpdump to see related machines, check web application’s access logs etc.</p>
+<p><img src="/images/oscpGuide/labdiagram.png" alt="_config.yml" /></p>
 
-<p>As a general rule, you can use /usr/share/wordlists/rockyou.txt file to decrypt/crack hashes you found on the lab machines and you will be most likely successful with rockyou if the hash you found meant to be cracked. You can use john or hashcat for password cracking but I used hashcat with my low end Nvidia GPU which is still thousands times faster then john since john uses CPU to crack hashes/passwords. Only other wordlists you will need are on Seclists which I gave link on resources section.</p>
+<p>Offsec lab environment is a simulation of a real corporate environment, network segments (VLANs) are a part of real life as well. Not all machines are equally hard and some lab machines requires information from other machines to be hacked. For example a credential you found on Machine A can be used on Machine B, so looting the machines you rooted is crucial. But how do you know what you can loot on owned machines? That’s a skill you will need to learn during your lab time and it is equally required in real life. Generally speaking, look for files in user home directories, try to get hashes from windows hosts, check /etc/shadow file, application and database config files. I highly suggest to have usernames, passwords, hashes, username:password files and take note all of credentials you gathered for future use on different machines. You should also check arp cache of each machine after rooting to be able to detect related machines (arp cache gets filled once a machine talks to another), run tcpdump to see related machines, check web application’s access logs etc.</p>
+
+<p>As a general rule, you can use /usr/share/wordlists/rockyou.txt file to decrypt/crack hashes you found on the lab machines and you will be most likely successful with rockyou if the hash you found is supposed to be cracked. You can use johntheripper or hashcat for password cracking, I used hashcat with my low end Nvidia GPU which is still thousands times faster then john since john uses CPU to crack hashes/passwords. Only other wordlists you will need are on Seclists which I gave link on resources section.</p>
 
 <p>You will mostly never need to bruteforce any user login page during your PWK but never forget to try default user/passwords like admin/admin admin/password and check the application default passwords from google.</p>
 
-<p><img src="/images/oscpGuide/labdiagram.png" alt="_config.yml" /></p>
-
 <h2 id="9-hints-for-lab-machines">9. Hints for Lab Machines</h2>
 
-<p>Offsec provides a student forum where you can find useful information about the course. Forum also contains a section for lab machines but I generally suggest to avoid hints from the forums as much as possible. In order to get most out of PWK, you will need to do lots of research and you will get furious from time to time but believe me on this, frustration is normal while learning pentesting. Do not forget that you will be on your own on your exam, so try to avoid forum hints as much as you can since I have seen some detailed spoilers on the forums. You can go to Offsec support page and ask your questions on live chat where you won’t be given easy answers and it’ll help you find out the intended way while not killing your learning.</p>
+<p>Offsec provides student forums where you can find useful information about the course. Forums also contains a section for lab machines but I generally suggest to avoid hints from the forums as much as possible. In order to get most out of PWK, you will need to do lots of research and you will get furious from time to time but believe me on this, frustration is normal while learning pentesting. Do not forget that you will be on your own on your exam, so try to avoid forum hints as much as you can since I have seen some detailed spoilers on the forums. You can go to Offsec support page and ask your questions on live chat where you won’t be given easy answers and it’ll help you find out the intended way while not killing your learning.</p>
 
-<p>You can of course use forums to find if you missed another path to root a machine after you rooted since there are generally more then one path to root machines on the labs. Each different path to root a machine will teach you something new.</p>
+<p>You can ofcourse use forums to find if you missed another path to root a machine after you rooted since there are generally more then one path to root machines on the labs. Each different path to root a machine will teach you something new. Since labs isn’t a CTF, you should look to learn but not to get flags.</p>
 
-<p>You can also use InfoSec Prep discord channel’s lab machine channel to ask about lab machines. People will help you over DM but not in public as it’s against the server rules.</p>
+<p>You can also use InfoSec Prep discord channel’s lab machine channels to ask about lab machines. People will help you over DM but not in public as it’s against the server rules.</p>
 
 <h2 id="10-exam">10. Exam</h2>
 
-<p>All Offsec certification exams are proctored, you will need to sit and connect to your given proctoring software 15 minutes before your exam. Do NOT forget to have a valid ID for yourself which will be chekced by the proctor.</p>
+<p>All Offsec certification exams are proctored, you will need to sit and connect to your given proctoring software 15 minutes before your exam. Do NOT forget to have a valid ID for yourself which will be checked by the proctor.</p>
 
-<p>As I have used Ubuntu linux on my exam, I was afraid of Offsec support on proctoring software and asked support about it. They gave me testing accounts and the official guide for proctoring software but it was quite easy. It’s just a chrome extension from official Google extensions page (no firefox support). You will signin to the software, share your screen(s) and that’s all. Don’t forget to wear something, you will be watched by at least 1 person :)</p>
+<p>As I have used Ubuntu Linux on my exam, I was afraid of Offsec support on proctoring software and asked support about it. They gave me testing accounts and the official guide for proctoring software but it was quite easy. It’s just a chrome extension from official Google extensions page (no firefox support). You will sign in to the software, share your screen(s) and that’s all.</p>
 
 <p>Once you get you VPN connection pack and connect to it, read the exam portal carefully.</p>
 
-<p>During the exam, you will be able to use whatever you can find on internet, take a look at your notes, watch tutorials on youtube or different places. Some tools that are not allowed on exam such as sqlmap are already listed in the exam FAQ. Since this is going to be a 24 hour long exam, you are expected and allowed to take breaks, just let the proctor know before moving away from your desk and wait for confirmation. And once you are back, tell it to your proctor. You can take long breaks for eating and even sleeping. If you need a long break, tell it to your proctor, you may be asked to close your webcam. You should be alone on the room you are taking exam but if someone gets in the room, it won’t cause you to get disqualified but Offsec states it will be noted. There is no need to worry for this rule since if kids gets in, it won’t cause any damage and elders will know why they shouldn’t.</p>
+<p>During the exam, you will be able to use whatever you can find on internet, take a look at your notes, watch tutorials on youtube or different places. Some tools that are not allowed on exam such as sqlmap are already listed in the <a href="https://www.offensive-security.com/faq/">exam FAQ</a>. Since this is going to be a 24 hour long exam, you are expected and allowed to take breaks, just let the proctor know before moving away from your desk and wait for confirmation. Once you are back, tell it to your proctor. You can take long breaks for eating and even sleeping. If you need a long break, tell it to your proctor, you may be asked to close your webcam. You should be alone on the room you are taking exam but if someone gets in the room, it won’t cause you to get disqualified but Offsec states it will be noted. There is no need to worry for this rule since if kids gets in, it won’t cause any damage and elders will know why they shouldn’t.</p>
 
 <p>It is your responsibility to have sustained power and internet connection. You may however move to a different place during your exam if you need to, so don’t stress it much. I should say, I had long electricity breaks for 2 days in a row before my exam but it’s fixed by the night.</p>
 
 <h2 id="11-reporting">11. Reporting</h2>
 
-<p>Once you have completed your exam, you will need to write a professional pentesting report just like you do in real life. You will have another 24 hours for reporting but during this time, you will NOT have access to exam machines. You are supposed to take screenshots and notes during your exam. While video recording of exam is not allowed, you can use scripts to save a screenshot every few seconds during your exam.</p>
+<p>Once you have completed your exam, you will need to write a professional pentesting report just like you do in real life. You will have another 24 hours for reporting but during this time, you will NOT have access to exam machines. <strong>You are supposed to take screenshots and notes during your exam.</strong> While video recording of exam is NOT allowed, you can use scripts to save a screenshot every few seconds during your exam.</p>
 
 <h2 id="12-how-was-my-experience-with-the-labs-and-exam">12. How was my Experience with the Labs and Exam</h2>
 
-<p>I purchased 60 days of lab time and started at 5th Jan 2020, before PWK v2 released. As I didn’t had enough funds to get update and lab extension, I stayed with the old materials, labs. At first I wasn’t happy with staying old versions but in the end, I managed to pass the exam on my first attempt and didn’t had to pay at least 200$ more for updates. Honestly, I really think 200$ is well worth for the updates since there are more content to study and %50 more lab machines to play and learn with.</p>
+<p>I purchased 60 days of lab time and started at 5th Jan 2020, before PWK v2 was released. As I didn’t had enough funds to get update and lab extension, I stayed with the old materials/ labs. At first I wasn’t happy with staying old versions but in the end, I managed to pass the exam on my first attempt and didn’t had to pay at least 200$ more for updates. Honestly, I really think 200$ is well worth for the updates since there are more content to study and %50 more lab machines to play and learn with.</p>
 
-<p>I watched only Buffer Overflow part of videos but read the full PDF and completed the exercises in my first 10 days an started wrote most of my lab report. I studied around 5 hours on average per day during 60 days lab time which means 300 hours in total. %20 of lab time was spent on exercises and %80 on labs. Since the PWK v2 has more content, it’s reasonable to spend 100 hours on PDF/videos and 400 hours on labs. Please note that, this numbers reflect my experience and everyone learns at different pace.</p>
+<p>I watched only Buffer Overflow part of videos but read the full PDF and completed the exercises in my first 10 days an started to write most of my lab report. I studied around 5 hours on average per day during 60 days lab time which means 300 hours in total. %20 of lab time was spent on exercises and %80 on labs. Since the PWK v2 has more content, it’s reasonable to spend 100 hours on PDF/videos and 400 hours on labs. Please note that, this numbers reflect my experience and everyone learns at different pace.</p>
 
 <p>I have taken extensive notes and screenshots during my lab time and I highly suggest it to everyone. My note structure was as following:</p>
 
@@ -226,31 +226,4 @@
   <li>Do not forget to spend at least 30 minutes for walking everyday, healthy body is a must</li>
   <li>If you get frustrated during labs/exam, try to get away for at least 5 minutes to chill down. Once you are back to study, try to make a list of information you got about the target machine, re-read the recon results.</li>
 </ul>
-
-<table>
-  <thead>
-    <tr>
-      <th>Priority apples</th>
-      <th>Second priority</th>
-      <th>Third priority</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>ambrosia</td>
-      <td>gala</td>
-      <td>red delicious</td>
-    </tr>
-    <tr>
-      <td>pink lady</td>
-      <td>jazz</td>
-      <td>macintosh</td>
-    </tr>
-    <tr>
-      <td>honeycrisp</td>
-      <td>granny smith</td>
-      <td>fuji</td>
-    </tr>
-  </tbody>
-</table>
 :ET
