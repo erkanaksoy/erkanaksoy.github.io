@@ -101,7 +101,7 @@ You can prepare a Lab report during your lab time. It will need to have solution
 Offensive Security provides templates for both Libre Office(ODT) and Microsoft Word(DOC), I used the ODT file since I use Linux as my host machine. Do NOT forget to export both exam and lab reports as pdf before submitting.
 
 ## 6. Discord
-Offsec has a discord server that you can join to keep you updated. I am a member of InfoSec Prep discord server and highly suggest to join it. Here is the link to join [InfoSec Prep](https://discord.gg/QwqePB9). InfoSec Prep channel has a lot of OSCP holders and students that are quite helpful if you need assistance and there are some Offsec guys on the server.
+Offsec has a discord server that you can join to keep you updated. I am a member of InfoSec Prep discord server and highly suggest to join it. Here is the link to join [InfoSec Prep](https://discord.gg/QwqePB9). InfoSec Prep channel has a lot of OSCP holders and students that are quite helpful if you need assistance. There are some Offsec guys on the server.
 
 ## 7. Pre-requirements
 
@@ -216,5 +216,12 @@ Links here should be very helpful in your TRY HARDER journey and I highly sugges
 ## 13. Other things
 * Always drink enough water not only during PWK, but all your life.
 * You need to be a good researcher to be able to successful in Cyber Security field, read command outputs and especially errors carefully
-* Do not forget to spend at least 30 minutes for walking, healthy body is a must
+* Do not forget to spend at least 30 minutes for walking everyday, healthy body is a must
 * If you get frustrated during labs/exam, try to get away for at least 5 minutes to chill down. Once you are back to study, try to make a list of information you got about the target machine, re-read the recon results.
+
+
+| Priority apples | Second priority | Third priority |
+|-------|--------|---------|
+| ambrosia | gala | red delicious |
+| pink lady | jazz | macintosh |
+| honeycrisp | granny smith | fuji |

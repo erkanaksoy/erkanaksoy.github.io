@@ -1,16 +1,16 @@
-I"n<p>This is just another OSCP guide but it will be a very detailed one.</p>
+I"�o<p>This is just another OSCP guide but it will be a very detailed one.</p>
 
 <p><img src="/images/oscpGuide/oscp.png" alt="_config.yml" /></p>
 
-<h1 id="1-introduction">1. Introduction</h1>
+<h2 id="1-introduction">1. Introduction</h2>
 
 <p>I am 39 years old computer engineer with 12 years enterprise level IT experience as sysadmin. I have been in cybersecurity for about 3 years now mostly as a student. I have had some experience with Kali Linux and general tools of penetration testing before starting PWK.</p>
 
-<h1 id="2-about-offensive-security">2. About Offensive Security</h1>
+<h2 id="2-about-offensive-security">2. About Offensive Security</h2>
 
 <p>Offensive Security is the most respected Cyber Security certification authority, at least for me. Their certifications are very well designed and has an absolutely top level acceptance in the professional field. Aside from being a certification/training provider, they also offer Professional Services such as Penetration Testing. One last thing they do is developing Kali Linux which is the industry standard for penetration testing.</p>
 
-<h1 id="3-about-oscp">3. About OSCP</h1>
+<h2 id="3-about-oscp">3. About OSCP</h2>
 
 <p>OSCP is the entry level certification of Offensive Security for Penetration Testers. Although it is named as an entry level certification and it really is, penetration testing is not an entry level job. It will require a wide range of background knowledge such as using linux, web, ftp, snmp, mail, active directory, dns, telnet servers, their client side tools, and tons of pentesting tools.</p>
 
@@ -30,15 +30,15 @@
 
 <p>You can find the course syllabus <a href="https://www.offensive-security.com/documentation/penetration-testing-with-kali.pdf">here</a></p>
 
-<h1 id="4-about-kali-linux">4. About Kali Linux</h1>
+<h2 id="4-about-kali-linux">4. About Kali Linux</h2>
 
 <p>Kali Linux is based on Debian and being developed by Offensive Security as a penetration testing Linux distribution. Offensive Security is not suggesting Kali Linux to be used as a daily driver but there are some people who is doing against that suggestion. I am not such a person currently but I did used Kali as a main OS for about 3 months or so. If your hardware does well with it, I can suggest it since with the 2020.1 update [LIINK], Kali is now being installed with a non-root user which is a must for security if you are using it bare-metal. I have used Ubuntu as host operating system during my lab time and exam.</p>
 
-<h1 id="5-environment-requirements">5. Environment Requirements</h1>
+<h2 id="5-environment-requirements">5. Environment Requirements</h2>
 
 <p>I will divide this section into subsections:</p>
 
-<h2 id="51-host-machine">5.1. Host machine</h2>
+<h3 id="51-host-machine">5.1. Host machine</h3>
 
 <p>While official suggestions by Offsec is low about your host machine for PWK/OSCP, I can suggest the following hardware on your host machine as minimum.</p>
 
@@ -53,17 +53,17 @@
 
 <p>I should also add your keyboard is important as well, since you will be typing commands during the labs and exam. Don’t forget that you will read a lot, so have a good monitor.</p>
 
-<h2 id="51-kali">5.1. Kali</h2>
+<h3 id="51-kali">5.1. Kali</h3>
 
 <p>Offensive Security officially supports Kali Linux to be run as a VM on VMWare Player/Workstation/Fusion. I did followed their guideline and used Kali on VMWare Workstation. While during my lab time, Offsec was suggesting their custom PWK build for the course and exam which was a 32bit version and had a few tools pre-installed, I did used my own 64bit 2019.4 Kali VM. I used my kali virtual machine with 4 cpu cores, 8GB memory and 100GB of disk space.</p>
 
-<h2 id="52-note-taking">5.2. Note Taking</h2>
+<h3 id="52-note-taking">5.2. Note Taking</h3>
 
 <p>If you are using Linux like me, you have a few options for note taking and Offsec says <a href="https://www.giuspen.com/cherrytree/">CherryTree</a> is a good option. I used CherryTree for note taking during the labs and exam and I am still happy with it. CherryTree saves your notes as a single file and it can encrypt the file if you wish. I saved my CherryTree file on my google drive and set CherryTree to automatically save every minute. I also copied my CherryTree file to another place every week as a backup. If you wonder, I use <a href="https://www.insynchq.com/">InSync</a> for google drive synchronization on Linux. (Shame on you google for still preparing a google drive client for linux for at least 3 years now). You can use <a href="https://mega.nz/">Mega</a> for free both on Kali and almost all other Linux distro’s if you wish.</p>
 
 <p><img src="/images/oscpGuide/cherry.png" alt="_config.yml" /></p>
 
-<h2 id="53-screenshoot-tool">5.3. Screenshoot Tool</h2>
+<h3 id="53-screenshoot-tool">5.3. Screenshoot Tool</h3>
 
 <p>It’s required during the labs and exam to have a lot of screenshot so you need a good one. Ubuntu 18.04 still have Shutter[link] in it’s official repositories which doesn’t exist in Kali’s. Shutter is able to automatically save the screenshoot as a file and copy it to clipboard.  Just set a keyboard shortcut for <strong><code class="highlighter-rouge">shutter -s</code></strong> and have fun with it.</p>
 
@@ -73,7 +73,7 @@
 
 <p><img src="/images/oscpGuide/nixnote2.png" alt="_config.yml" /></p>
 
-<h2 id="54-terminal-application">5.4. Terminal Application</h2>
+<h3 id="54-terminal-application">5.4. Terminal Application</h3>
 
 <p>Since you will spend a lot of time on terminal, I highly suggest to have a good terminal application. I am pretty sure you have a lot of options but aware of 2 tools which are available on kali repositories.</p>
 
@@ -91,7 +91,7 @@
 
 <p>Tmux has a lot of advantages over terminator such as saving logs and searching through command output.</p>
 
-<h2 id="55-documentation">5.5. Documentation</h2>
+<h3 id="55-documentation">5.5. Documentation</h3>
 
 <p>You can prepare a Lab report during your lab time. It will need to have solution to the exercises in the PDF and at least 10 lab machines with different attack vectors. A lab report is not a must but should be done by everyone for a few reasons:</p>
 
@@ -104,14 +104,14 @@
 
 <p>Offensive Security provides templates for both Libre Office(ODT) and Microsoft Word(DOC), I used the ODT file since I use Linux as my host machine. Do NOT forget to export both exam and lab reports as pdf before submitting.</p>
 
-<h1 id="6-discord">6. Discord</h1>
-<p>Offsec has a discord server that you can join to keep you updated. I am a member of InfoSec Prep discord server and highly suggest to join it. Here is the link to join <a href="https://discord.gg/QwqePB9">InfoSec Prep</a>. InfoSec Prep channel has a lot of OSCP holders and students that are quite helpful if you need assistance and there are some Offsec guys on the server.</p>
+<h2 id="6-discord">6. Discord</h2>
+<p>Offsec has a discord server that you can join to keep you updated. I am a member of InfoSec Prep discord server and highly suggest to join it. Here is the link to join <a href="https://discord.gg/QwqePB9">InfoSec Prep</a>. InfoSec Prep channel has a lot of OSCP holders and students that are quite helpful if you need assistance. There are some Offsec guys on the server.</p>
 
-<h1 id="7-pre-requirements">7. Pre-requirements</h1>
+<h2 id="7-pre-requirements">7. Pre-requirements</h2>
 
 <p>Although not a must, basic IT and linux knowledge will help you a lot during PWK/OSCP and can shorten your lab time requirements. Do not overthink about these requirements, it shouldn’t take more then a month to get enough knowledge if you are completely new to pentesting. If you try yo be perfectly ready for PWK/OSCP, you will never be.</p>
 
-<h1 id="8-labs">8. Labs</h1>
+<h2 id="8-labs">8. Labs</h2>
 
 <p>Since the PWK got updated at 11th February, there are now 75+ hackable machines on the labs within . Lab environment is shared along with limited number of students who has a portal for reverting machines. Each student has given 12 reverts per day (not for each machine but for whole lab) and I think I never used more then 8 reverts during my 60 days lab time.</p>
 
@@ -125,7 +125,7 @@
 
 <p><img src="/images/oscpGuide/labdiagram.png" alt="_config.yml" /></p>
 
-<h1 id="9-hints-for-lab-machines">9. Hints for Lab Machines</h1>
+<h2 id="9-hints-for-lab-machines">9. Hints for Lab Machines</h2>
 
 <p>Offsec provides a student forum where you can find useful information about the course. Forum also contains a section for lab machines but I generally suggest to avoid hints from the forums as much as possible. In order to get most out of PWK, you will need to do lots of research and you will get furious from time to time but believe me on this, frustration is normal while learning pentesting. Do not forget that you will be on your own on your exam, so try to avoid forum hints as much as you can since I have seen some detailed spoilers on the forums. You can go to Offsec support page and ask your questions on live chat where you won’t be given easy answers and it’ll help you find out the intended way while not killing your learning.</p>
 
@@ -133,7 +133,7 @@
 
 <p>You can also use InfoSec Prep discord channel’s lab machine channel to ask about lab machines. People will help you over DM but not in public as it’s against the server rules.</p>
 
-<h1 id="10-exam">10. Exam</h1>
+<h2 id="10-exam">10. Exam</h2>
 
 <p>All Offsec certification exams are proctored, you will need to sit and connect to your given proctoring software 15 minutes before your exam. Do NOT forget to have a valid ID for yourself which will be chekced by the proctor.</p>
 
@@ -145,11 +145,11 @@
 
 <p>It is your responsibility to have sustained power and internet connection. You may however move to a different place during your exam if you need to, so don’t stress it much. I should say, I had long electricity breaks for 2 days in a row before my exam but it’s fixed by the night.</p>
 
-<h1 id="11-reporting">11. Reporting</h1>
+<h2 id="11-reporting">11. Reporting</h2>
 
 <p>Once you have completed your exam, you will need to write a professional pentesting report just like you do in real life. You will have another 24 hours for reporting but during this time, you will NOT have access to exam machines. You are supposed to take screenshots and notes during your exam. While video recording of exam is not allowed, you can use scripts to save a screenshot every few seconds during your exam.</p>
 
-<h1 id="12-how-was-my-experience-with-the-labs-and-exam">12. How was my Experience with the Labs and Exam</h1>
+<h2 id="12-how-was-my-experience-with-the-labs-and-exam">12. How was my Experience with the Labs and Exam</h2>
 
 <p>I purchased 60 days of lab time and started at 5th Jan 2020, before PWK v2 released. As I didn’t had enough funds to get update and lab extension, I stayed with the old materials, labs. At first I wasn’t happy with staying old versions but in the end, I managed to pass the exam on my first attempt and didn’t had to pay at least 200$ more for updates. Honestly, I really think 200$ is well worth for the updates since there are more content to study and %50 more lab machines to play and learn with.</p>
 
@@ -181,7 +181,7 @@
 
 <p><img src="/images/oscpGuide/exam.png" alt="_config.yml" /></p>
 
-<h1 id="12-resources">12. Resources</h1>
+<h2 id="12-resources">12. Resources</h2>
 <p>Links here should be very helpful in your TRY HARDER journey and I highly suggest you to learn and get familiar with them before you start PWK.</p>
 
 <ul>
@@ -219,11 +219,38 @@
   <li>Metasploit guide by Offsec - <a href="https://www.offensive-security.com/metasploit-unleashed">https://www.offensive-security.com/metasploit-unleashed</a></li>
 </ul>
 
-<h1 id="13-other-things">13. Other things</h1>
+<h2 id="13-other-things">13. Other things</h2>
 <ul>
   <li>Always drink enough water not only during PWK, but all your life.</li>
   <li>You need to be a good researcher to be able to successful in Cyber Security field, read command outputs and especially errors carefully</li>
-  <li>Do not forget to spend at least 30 minutes for walking, healthy body is a must</li>
+  <li>Do not forget to spend at least 30 minutes for walking everyday, healthy body is a must</li>
   <li>If you get frustrated during labs/exam, try to get away for at least 5 minutes to chill down. Once you are back to study, try to make a list of information you got about the target machine, re-read the recon results.</li>
 </ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Priority apples</th>
+      <th>Second priority</th>
+      <th>Third priority</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ambrosia</td>
+      <td>gala</td>
+      <td>red delicious</td>
+    </tr>
+    <tr>
+      <td>pink lady</td>
+      <td>jazz</td>
+      <td>macintosh</td>
+    </tr>
+    <tr>
+      <td>honeycrisp</td>
+      <td>granny smith</td>
+      <td>fuji</td>
+    </tr>
+  </tbody>
+</table>
 :ET
