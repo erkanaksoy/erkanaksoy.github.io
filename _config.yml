@@ -9,8 +9,7 @@ name: Erkan AKSOY
 description:
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: ![_config.yml]({{ site.baseurl }}/images/oscp-logo.png)
-
+avatar: https://raw.githubusercontent.com/erkanaksoy/erkanaksoy.github.io/master/images/oscp-logo.png
 
 #
 # Flags below are optional
@@ -85,5 +84,3 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
-
-theme: jekyll-theme-hacker
