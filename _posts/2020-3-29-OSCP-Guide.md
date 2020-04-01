@@ -220,3 +220,5 @@ Links here should be very helpful in your TRY HARDER journey and I highly sugges
 * You need to be a good researcher to be able to successful in Cyber Security field, read command outputs and especially errors carefully
 * Do not forget to spend at least 30 minutes for walking everyday, healthy body is a must
 * If you get frustrated during labs/exam, try to get away for at least 5 minutes to chill down. Once you are back to study, try to make a list of information you got about the target machine, re-read the recon results.
+
+Please let me know if you see any mistakes or have suggestions about this guide. Hope it helps your journey.
