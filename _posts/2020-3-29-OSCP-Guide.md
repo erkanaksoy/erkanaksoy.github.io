@@ -72,7 +72,7 @@ It's required during the labs and exam to have a lot of screenshot so you need a
 
 On Windows, you can use [OneNote desktop application](https://go.microsoft.com/fwlink/?linkid=2110341) both for taking notes and screenshots. You can change the default shortcut for screenshot taking using [this guide](https://www.winhelponline.com/blog/onenote-screen-clipping-shortcut-key-change/).
 
-It's also possible that you can use Evernote on Windows. If you are on Linux, you can use [NixNote2](https://github.com/robert7/nixnote2/releases) as EverNote client. Make sure to set auto sync.
+It's also possible that you can use Evernote on Windows. If you are on Linux, you can use [NixNote2](https://github.com/robert7/nixnote2/releases) as Evernote client. Make sure to set auto sync.
 
 ![_config.yml]({{ site.baseurl }}/images/oscpGuide/nixnote2.png)
 
@@ -113,7 +113,7 @@ Although not a must, basic IT and linux knowledge will help you a lot during PWK
 
 Since the PWK got updated at 11th February, there are now 75+ hackable machines on the labs within . Lab environment is shared along with limited number of students who has a portal for reverting machines. Each student has given 12 reverts per day (not for each machine but for whole lab per day). Although 12 might be looking low, I never used more then 8 reverts during my 60 days lab time. Also, you can ask Offsec support if you are out of revert.
 
-Lab environment contains around 75 machines which are divided into a few different network segments. You will start hacking machines on student network and try to hack ones at admin network as a final goal. Note that IT, Developement and Admin networks are not directly accessible from your VPN connection while Student Network is and you are supposed to pivot through some dual homed machines in student network. You should check machine ip addresses carefully if you happen to root them. Along with proof.txt file some machines has network-secret.txt file that you can use on your web panel to access to reverting those network machines.
+Lab environment contains around 75 machines which are divided into a few different network segments. You will start hacking machines on student network and try to hack ones at admin network as a final goal. Note that IT, Development and Admin networks are not directly accessible from your VPN connection while Student Network is and you are supposed to pivot through some dual homed machines in student network. You should check machine ip addresses carefully if you happen to root them. Along with proof.txt file some machines has network-secret.txt file that you can use on your web panel to access to reverting those network machines.
 
 ![_config.yml]({{ site.baseurl }}/images/oscpGuide/labdiagram.png)
 
@@ -121,13 +121,13 @@ Offsec lab environment is a simulation of a real corporate environment, network 
 
 As a general rule, you can use /usr/share/wordlists/rockyou.txt file to decrypt/crack hashes you found on the lab machines and you will be most likely successful with rockyou if the hash you found is supposed to be cracked. You can use johntheripper or hashcat for password cracking, I used hashcat with my low end Nvidia GPU which is still thousands times faster then john since john uses CPU to crack hashes/passwords. Only other wordlists you will need are on Seclists which I gave link on resources section.
 
-You will mostly never need to bruteforce any user login page during your PWK but never forget to try default user/passwords like admin/admin admin/password and check the application default passwords from google.
+You will mostly never need to brute force any user login page during your PWK but never forget to try default user/passwords like admin/admin admin/password and check the application default passwords from google.
 
 ## 9. Hints for Lab Machines
 
 Offsec provides student forums where you can find useful information about the course. Forums also contains a section for lab machines but I generally suggest to avoid hints from the forums as much as possible. In order to get most out of PWK, you will need to do lots of research and you will get furious from time to time but believe me on this, frustration is normal while learning pentesting. Do not forget that you will be on your own on your exam, so try to avoid forum hints as much as you can since I have seen some detailed spoilers on the forums. You can go to Offsec support page and ask your questions on live chat where you won't be given easy answers and it'll help you find out the intended way while not killing your learning.
 
-You can ofcourse use forums to find if you missed another path to root a machine after you rooted since there are generally more then one path to root machines on the labs. Each different path to root a machine will teach you something new. Since labs isn't a CTF, you should look to learn but not to get flags.
+You can of course use forums to find if you missed another path to root a machine after you rooted since there are generally more then one path to root machines on the labs. Each different path to root a machine will teach you something new. Since labs isn't a CTF, you should look to learn but not to get flags.
 
 You can also use InfoSec Prep discord channel's lab machine channels to ask about lab machines. People will help you over DM but not in public as it's against the server rules.
 
@@ -135,11 +135,11 @@ You can also use InfoSec Prep discord channel's lab machine channels to ask abou
 
 All Offsec certification exams are proctored, you will need to sit and connect to your given proctoring software 15 minutes before your exam. Do NOT forget to have a valid ID for yourself which will be checked by the proctor.
 
-As I have used Ubuntu Linux on my exam, I was afraid of Offsec support on proctoring software and asked support about it. They gave me testing accounts and the official guide for proctoring software but it was quite easy. It's just a chrome extension from official Google extensions page (no firefox support). You will sign in to the software, share your screen(s) and that's all.
+As I have used Ubuntu Linux on my exam, I was afraid of Offsec support on proctoring software and asked support about it. They gave me testing accounts and the official guide for proctoring software but it was quite easy. It's just a chrome extension from official Google extensions page (no Firefox support). You will sign in to the software, share your screen(s) and that's all.
 
 Once you get you VPN connection pack and connect to it, read the exam portal carefully.
 
-During the exam, you will be able to use whatever you can find on internet, take a look at your notes, watch tutorials on youtube or different places. Some tools that are not allowed on exam such as sqlmap are already listed in the [exam FAQ](https://www.offensive-security.com/faq/). Since this is going to be a 24 hour long exam, you are expected and allowed to take breaks, just let the proctor know before moving away from your desk and wait for confirmation. Once you are back, tell it to your proctor. You can take long breaks for eating and even sleeping. If you need a long break, tell it to your proctor, you may be asked to close your webcam. You should be alone on the room you are taking exam but if someone gets in the room, it won't cause you to get disqualified but Offsec states it will be noted. There is no need to worry for this rule since if kids gets in, it won't cause any damage and elders will know why they shouldn't.
+During the exam, you will be able to use whatever you can find on internet, take a look at your notes, watch tutorials on Youtube or different places. Some tools that are not allowed on exam such as sqlmap are already listed in the [exam FAQ](https://www.offensive-security.com/faq/). Since this is going to be a 24 hour long exam, you are expected and allowed to take breaks, just let the proctor know before moving away from your desk and wait for confirmation. Once you are back, tell it to your proctor. You can take long breaks for eating and even sleeping. If you need a long break, tell it to your proctor, you may be asked to close your webcam. You should be alone on the room you are taking exam but if someone gets in the room, it won't cause you to get disqualified but Offsec states it will be noted. There is no need to worry for this rule since if kids gets in, it won't cause any damage and elders will know why they shouldn't.
 
 It is your responsibility to have sustained power and internet connection. You may however move to a different place during your exam if you need to, so don't stress it much. I should say, I had long electricity breaks for 2 days in a row before my exam but it's fixed by the night.
 
@@ -161,7 +161,7 @@ You should have recon, proof, loot, priv esc sub-sections for each host on both 
 
 While I was doing exercises on the PDF, I used autorecon for each host that I had access to. I also did a full nmap scan of student network on a few overnights. When I was finished with the PDF, I had enough information about the machines on student network. First I checked the nmap output for an overview and started to hack machines. Note that, you shouldn't work on machines by IP order but try to figure out low hanging fruits. Figuring out the low hanging fruits is an important pentesting skill, so do it on your own but not by asking to others on any community channel.
 
-Once I have rooted around 30 machines on student network and got 2 network secret files, I started learning about pivoting and applied it to access the Developeent and IT networks. I haven't touched to Admin network but in total I have rooted around 45 machines during my 2 months lab time. If you happen to hack all machines and still have lab time, try to start over without looking back to your notes.
+Once I have rooted around 30 machines on student network and got 2 network secret files, I started learning about pivoting and applied it to access the Development and IT networks. I haven't touched to Admin network but in total I have rooted around 45 machines during my 2 months lab time. If you happen to hack all machines and still have lab time, try to start over without looking back to your notes.
 
 Both on labs and exam, exploit-db is the most important resource for finding exploits. You can use it's web interface or use *`searchsploit`* command line tool on Kali.
 
