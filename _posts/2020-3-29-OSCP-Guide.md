@@ -66,9 +66,9 @@ If you are using Linux like me, you have a few options for note taking and Offse
 
 ![_config.yml]({{ site.baseurl }}/images/oscpGuide/cherry.png)
 
-### 5.3. Screenshoot Tool
+### 5.3. Screenshot Tool
 
-It's required during the labs and exam to have a lot of screenshot so you need a good one. Ubuntu 18.04 still have Shutter[link] in it's official repositories which doesn't exist in Kali's. Shutter is able to automatically save the screenshoot as a file and copy it to clipboard.  Just set a keyboard shortcut for **`shutter -s`** and have fun with it.
+It's required during the labs and exam to have a lot of screenshot so you need a good one. Ubuntu 18.04 still have Shutter[link] in it's official repositories which doesn't exist in Kali's. Shutter is able to automatically save the screenshot as a file and copy it to clipboard.  Just set a keyboard shortcut for **`shutter -s`** and have fun with it.
 
 On Windows, you can use [OneNote desktop application](https://go.microsoft.com/fwlink/?linkid=2110341) both for taking notes and screenshots. You can change the default shortcut for screenshot taking using [this guide](https://www.winhelponline.com/blog/onenote-screen-clipping-shortcut-key-change/).
 
