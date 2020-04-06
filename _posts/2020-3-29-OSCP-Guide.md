@@ -3,13 +3,15 @@ layout: post
 title: OSCP Guide
 ---
 
-This is just another OSCP guide but it will be a very detailed one.
+This is just another OSCP guide but I will try it to be a very detailed one.
 
 ![_config.yml]({{ site.baseurl }}/images/oscpGuide/oscp.png)
 
 ## 1. Introduction
 
-I am 39 years old computer engineer with 12 years enterprise level IT experience as sysadmin. I have been in cyber security for about 3 years mostly as a student. I had some experience with Kali Linux and general tools of penetration testing before starting PWK.
+I am 39 years old computer engineer with 12 years enterprise level IT experience as sysadmin. I have been in cyber security for about 3 years mostly as a student. I had some experience with Kali Linux and general tools of penetration testing before starting PWK. 
+
+I was able to pass the exam on my first attempt which I am proud of. 
 
 ## 2. About Offensive Security
 
