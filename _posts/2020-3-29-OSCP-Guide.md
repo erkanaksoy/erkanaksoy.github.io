@@ -9,9 +9,9 @@ This is just another OSCP guide but I will try it to be a very detailed one.
 
 ## 1. Introduction
 
-I am 39 years old computer engineer with 12 years enterprise level IT experience as sysadmin. I have been in cyber security for about 3 years mostly as a student. I had some experience with Kali Linux and general tools of penetration testing before starting PWK. 
+I am 39 years old computer engineer with 12 years enterprise level IT experience as sysadmin. I have been in cyber security for about 3 years mostly as a student. I had some experience with Kali Linux and general tools of penetration testing before starting PWK.
 
-I was able to pass the exam on my first attempt which I am proud of. 
+I was able to pass the exam on my first attempt which I am proud of.
 
 ## 2. About Offensive Security
 
@@ -23,7 +23,7 @@ I was able to pass the exam on my first attempt which I am proud of.
 
 To not to get confused, I should inform you PWK(Penetration Testing with Kali Linux) is the course you take to be able to take OSCP exam.
 
-While I had some other certifications from different vendors, I can easily say that OSCP stands out by far as the best certification. First of all, it is completely practical, labs teach a lot and exam has no multiple-choice questions. If you pass, you really deserve it. 
+While I had some other certifications from different vendors, I can easily say that OSCP stands out by far as the best certification. First of all, it is completely practical, labs teach a lot and exam has no multiple-choice questions. If you pass, you really deserve it.
 
 While you are purchasing PWK, you will set a starting time for your course. You will get a link to download your course materials (PDF and video) and your username/password for VPN connection to the labs/forum account on your actual lab start time. There is no way to get materials before your lab start time since the PDF/videos and labs goes head to head. With the [PWK 2020 update](https://www.offensive-security.com/offsec/pwk-2020-update/) you get a 853 pages long PDF and 17+ hours of video tutorials.
 
@@ -160,6 +160,8 @@ I have taken extensive notes and screenshots during my lab time and I highly sug
 ![_config.yml]({{ site.baseurl }}/images/oscpGuide/notes.png)
 
 You should have recon, proof, loot, priv esc sub-sections for each host on both labs and exam.
+
+I highly suggest you to read full results from recon tools before trying to hack any machine. This way you will have an overview of the machine and services on it which will be helpful while you are trying to hack the machine. Don't forget you may need to chain 2 or more vulnerability and/or service to exploit a machine. This method does apply to priv esc tool results.
 
 While I was doing exercises on the PDF, I used autorecon for each host that I had access to. I also did a full nmap scan of student network on a few overnights. When I was finished with the PDF, I had enough information about the machines on student network. First I checked the nmap output for an overview and started to hack machines. Note that, you shouldn't work on machines by IP order but try to figure out low hanging fruits. Figuring out the low hanging fruits is an important pentesting skill, so do it on your own but not by asking to others on any community channel.
 
