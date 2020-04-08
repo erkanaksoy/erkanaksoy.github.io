@@ -109,7 +109,11 @@ Offsec has a discord server that you can join to keep you updated. I am a member
 
 ## 7. Pre-requirements
 
-Although not a must, basic IT and linux knowledge will help you a lot during PWK/OSCP and can shorten your lab time requirements. Do not overthink about these requirements, it shouldn't take more then a month to get enough knowledge if you are completely new to pentesting. If you try yo be perfectly ready for PWK/OSCP, you will never be. Take a look at the resources section on this guide.
+Although not a must, basic IT and linux knowledge will help you a lot during PWK/OSCP and can shorten your lab time requirements. Do not overthink about these requirements, it shouldn't take more then a month to get enough knowledge if you are completely new to pentesting. If you try yo be perfectly ready for PWK/OSCP, you will never be. Take a look at the resources section on this guide. If you or your company can not afford enough lab time and you are time limited, you may want to do TJNull's OSCP like machine list before starting PWK.
+
+During the labs and exam you won't have to write an exploit except buffer overflow (it's very easy) but you will need to read and understand some exploits and make small changes. You still will be fine even if you have no programming skills but some python knowledge never hurts.
+
+Do not forget to read other people's reviews, there is no one ring to rule them all.
 
 ## 8. Labs
 
@@ -144,6 +148,8 @@ Once you get you VPN connection pack and connect to it, read the exam portal car
 During the exam, you will be able to use whatever you can find on internet, take a look at your notes, watch tutorials on Youtube or different places. Some tools that are not allowed on exam such as sqlmap are already listed in the [exam FAQ](https://www.offensive-security.com/faq/). Since this is going to be a 24 hour long exam, you are expected and allowed to take breaks, just let the proctor know before moving away from your desk and wait for confirmation. Once you are back, tell it to your proctor. You can take long breaks for eating and even sleeping. If you need a long break, tell it to your proctor, you may be asked to close your webcam. You should be alone on the room you are taking exam but if someone gets in the room, it won't cause you to get disqualified but Offsec states it will be noted. There is no need to worry for this rule since if kids gets in, it won't cause any damage and elders will know why they shouldn't.
 
 It is your responsibility to have sustained power and internet connection. You may however move to a different place during your exam if you need to, so don't stress it much. I should say, I had long electricity breaks for 2 days in a row before my exam but it's fixed by the night.
+
+Most important suggestion for the OSCP journey and exam is, build your methodology before taking exam. Lab is the best place to build your methodology. Don't overlook to exam, if you do so, you may never feel completely ready for it. 
 
 ## 11. Reporting
 
