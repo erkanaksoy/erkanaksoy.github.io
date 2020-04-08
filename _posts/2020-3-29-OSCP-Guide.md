@@ -149,7 +149,9 @@ During the exam, you will be able to use whatever you can find on internet, take
 
 It is your responsibility to have sustained power and internet connection. You may however move to a different place during your exam if you need to, so don't stress it much. I should say, I had long electricity breaks for 2 days in a row before my exam but it's fixed by the night.
 
-Most important suggestion for the OSCP journey and exam is, build your methodology before taking exam. Lab is the best place to build your methodology. Don't overlook to exam, if you do so, you may never feel completely ready for it. 
+Most important suggestion for the OSCP journey and exam is, you should build your methodology before taking examand your lab time is the best place to build your methodology.
+
+Don't overlook to exam, if you do so, you may never feel completely ready for it.
 
 ## 11. Reporting
 
