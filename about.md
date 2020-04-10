@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I have bachelor's in Computer Science and have 12 years of IT experience as sysadmin. For the last 3 years I am in CyberSecurity and obtained OSCP.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+erkan.aksoy@gmail.com](mailto:erkan.aksoy@gmail.com)
