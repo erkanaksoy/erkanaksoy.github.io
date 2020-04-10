@@ -3,8 +3,6 @@ layout: post
 title: OSCP Guide
 ---
 
-This is just another OSCP guide but I will try it to be a very detailed one.
-
 ![_config.yml]({{ site.baseurl }}/images/oscpGuide/oscp.png)
 
 ## 1. Introduction
