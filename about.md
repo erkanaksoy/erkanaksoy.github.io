@@ -8,7 +8,7 @@ I have bachelor's in Computer Science and have 12 years of IT experience as sysa
 
 ### More Information
 
-
+Check my linkedin [page](https://www.linkedin.com/in/erkana)
 ### Contact me
 
-erkan.aksoy@gmail.com](mailto:erkan.aksoy@gmail.com)
+[erkan.aksoy@gmail.com](mailto:erkan.aksoy@gmail.com)
