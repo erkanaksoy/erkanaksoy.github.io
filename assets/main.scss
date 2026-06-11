@@ -21,3 +21,6 @@ pre, code { border-color: #333; }
 
 // Hide the site footer
 .site-footer { display: none; }
+
+// Align the RSS icon in the nav
+.site-nav .rss-link { display: inline-flex; align-items: center; }
