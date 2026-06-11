@@ -1,0 +1,16 @@
+---
+# This empty front matter block is required so Jekyll compiles the SCSS.
+---
+
+$background-color:  #1a1a1a;
+$text-color:        #e8e8e8;
+$brand-color:       #7eb6ff;   // links
+$grey-color:        #9a9a9a;   // footer / muted text
+$grey-color-light:  #333333;   // borders
+$grey-color-dark:   #f0f0f0;   // site title
+
+@import "minima";
+
+// Stop code blocks from rendering as bright white on dark
+.highlight, pre, code { background-color: #242424; }
+pre, code { border-color: #333; }
