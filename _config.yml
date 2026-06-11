@@ -3,4 +3,5 @@ description: Cybersecurity, Active Directory, Azure and Microsoft Entra ID
 theme: minima
 
 header_pages:
+  - index.md
   - about.md

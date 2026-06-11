@@ -1,3 +1,4 @@
+---
 layout: page
 title: About Me
 permalink: /about/
@@ -5,7 +6,7 @@ permalink: /about/
 
 # About Me
 
-I’m Erkan Aksoy, a Senior Content Engineer working on cybersecurity training and lab content.
+I'm Erkan Aksoy, a Senior Content Engineer working on cybersecurity training and lab content.
 
 My primary areas of interest include:
 
