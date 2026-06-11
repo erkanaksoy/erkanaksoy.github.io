@@ -1,3 +1,5 @@
 title: Erkan Aksoy's Blog
 description: Cybersecurity, Active Directory, Azure and Microsoft Entra ID
 theme: minima
+header_pages:
+  - about.md
