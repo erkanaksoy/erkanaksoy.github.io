@@ -24,3 +24,12 @@ pre, code { border-color: #333; }
 
 // Align the RSS icon in the nav
 .site-nav .rss-link { display: inline-flex; align-items: center; }
+
+// --- Post readability polish ---
+table th, table td { border-color: #333; }
+table th { background-color: #2d2d2d; color: #f0f0f0; }
+table tr:nth-child(even) { background-color: #202020; }
+
+figure { margin: 1.5rem 0; }
+figure img { display: block; max-width: 100%; border-radius: 6px; }
+figcaption { color: #9a9a9a; font-size: 0.9em; margin-top: 0.4rem; text-align: center; }
