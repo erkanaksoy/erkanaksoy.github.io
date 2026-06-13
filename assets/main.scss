@@ -60,3 +60,37 @@ figcaption { color: #9a9a9a; font-size: 0.9em; margin-top: 0.4rem; text-align: c
 
 // Align the RSS icon in the nav
 .site-nav .rss-link { display: inline-flex; align-items: center; gap: 4px; }
+
+// --- Sticky table of contents (post pages) ---
+.post-toc {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc(50% - 400px - 230px);   // anchored just left of the ~800px content column
+  width: 210px;
+  max-height: 72vh;
+  overflow-y: auto;
+  font-size: 13px;
+  line-height: 1.4;
+}
+.post-toc .toc-title {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 11px;
+  color: #9a9a9a;
+  margin-bottom: 8px;
+  padding-left: 12px;
+}
+.post-toc a {
+  display: block;
+  padding: 4px 0 4px 12px;
+  border-left: 2px solid #333;
+  color: #9a9a9a;
+  text-decoration: none;
+}
+.post-toc a:hover { color: #e8e8e8; }
+.post-toc a.toc-h3 { padding-left: 24px; font-size: 12px; }
+.post-toc a.is-active { color: #7eb6ff; border-left-color: #7eb6ff; }
+
+// Not enough side room below this width: hide it
+@media (max-width: 1300px) { .post-toc { display: none; } }

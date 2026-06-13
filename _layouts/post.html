@@ -1,0 +1,81 @@
+---
+layout: default
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+      {%- endif -%}</p>
+  </header>
+
+  <nav class="post-toc" id="post-toc" aria-label="Table of contents">
+    <div class="toc-title">On this page</div>
+  </nav>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>
+
+<script>
+(function () {
+  var content = document.querySelector('.post-content');
+  var toc = document.getElementById('post-toc');
+  if (!content || !toc) return;
+
+  var headings = Array.prototype.slice.call(content.querySelectorAll('h2, h3'));
+  if (headings.length < 2) { toc.style.display = 'none'; return; }
+
+  var links = [];
+  headings.forEach(function (h) {
+    if (!h.id) {
+      h.id = h.textContent.trim().toLowerCase()
+        .replace(/[^\w\s-]/g, '').replace(/\s+/g, '-');
+    }
+    var a = document.createElement('a');
+    a.href = '#' + h.id;
+    a.textContent = h.textContent;
+    if (h.tagName.toLowerCase() === 'h3') { a.className = 'toc-h3'; }
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      h.scrollIntoView({ behavior: 'smooth' });
+      history.replaceState(null, '', '#' + h.id);
+    });
+    toc.appendChild(a);
+    links.push(a);
+  });
+
+  function setActive() {
+    var idx = 0;
+    for (var i = 0; i < headings.length; i++) {
+      if (headings[i].getBoundingClientRect().top <= 120) { idx = i; }
+      else { break; }
+    }
+    links.forEach(function (l, i) { l.classList.toggle('is-active', i === idx); });
+  }
+
+  var ticking = false;
+  function onScroll() {
+    if (!ticking) {
+      window.requestAnimationFrame(function () { setActive(); ticking = false; });
+      ticking = true;
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+  setActive();
+}());
+</script>
