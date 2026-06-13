@@ -4,8 +4,6 @@ title: About Me
 permalink: /about/
 ---
 
-# About Me
-
 Hi, I’m Erkan Aksoy.
 
 I’m a Senior Content Engineer at Hack The Box, where I create cybersecurity training content, hands-on labs, and realistic attack scenarios. My main areas of focus are Windows, Active Directory, Azure, and Microsoft Entra ID security.

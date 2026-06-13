@@ -11,19 +11,38 @@ $grey-color-dark:   #f0f0f0;   // site title
 
 @import "minima";
 
-// Stop code blocks from rendering as bright white on dark
-.highlight, pre, code { background-color: #242424; }
-pre, code { border-color: #333; }
+// --- Dark code blocks (override minima's light Rouge theme) ---
+code,
+pre,
+.highlight,
+.highlighter-rouge .highlight,
+pre.highlight,
+.highlight pre {
+  background-color: #1e1e1e;
+  border-color: #333;
+  color: #e8e8e8;
+}
 
-// Hide the "Home" page heading and the RSS subscribe line on the home page
-.home .page-heading { display: none; }
-.rss-subscribe      { display: none; }
-
-// Hide the site footer
-.site-footer { display: none; }
-
-// Align the RSS icon in the nav
-.site-nav .rss-link { display: inline-flex; align-items: center; }
+// Rouge syntax tokens, tuned for a dark background
+.highlight {
+  .c, .c1, .cm, .cd, .cs       { color: #6a9955; font-style: italic; } // comments
+  .cp                          { color: #c586c0; }                     // preprocessor
+  .err                         { color: #f44747; }                     // error
+  .k, .kc, .kd, .kn, .kp, .kr  { color: #569cd6; }                     // keywords
+  .kt                          { color: #4ec9b0; }                     // types
+  .o, .ow                      { color: #d4d4d4; }                     // operators
+  .p                           { color: #d4d4d4; }                     // punctuation
+  .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx, .sr, .ss { color: #ce9178; } // strings
+  .m, .mi, .mf, .mh, .mo, .il  { color: #b5cea8; }                     // numbers
+  .nb                          { color: #4ec9b0; }                     // builtins
+  .nf, .fm                     { color: #dcdcaa; }                     // functions
+  .nc, .nn                     { color: #4ec9b0; }                     // class / namespace
+  .na                          { color: #9cdcfe; }                     // attributes
+  .nt                          { color: #569cd6; }                     // tags / YAML keys
+  .nv, .vg, .vi                { color: #9cdcfe; }                     // variables
+  .gd                          { color: #f44747; }                     // diff: deleted
+  .gi                          { color: #6a9955; }                     // diff: inserted
+}
 
 // --- Post readability polish ---
 table th, table td { border-color: #333; }
@@ -33,3 +52,11 @@ table tr:nth-child(even) { background-color: #202020; }
 figure { margin: 1.5rem 0; }
 figure img { display: block; max-width: 100%; border-radius: 6px; }
 figcaption { color: #9a9a9a; font-size: 0.9em; margin-top: 0.4rem; text-align: center; }
+
+// --- Hide elements we don't want ---
+.home .page-heading { display: none; }
+.rss-subscribe      { display: none; }
+.site-footer        { display: none; }
+
+// Align the RSS icon in the nav
+.site-nav .rss-link { display: inline-flex; align-items: center; gap: 4px; }
