@@ -64,11 +64,6 @@ layout: default
       if (headings[i].getBoundingClientRect().top <= 120) { idx = i; }
       else { break; }
     }
-    // Bottom of the page: the last section can't reach the trigger line,
-    // so pin the final heading as active.
-    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
-      idx = headings.length - 1;
-    }
     links.forEach(function (l, i) { l.classList.toggle('is-active', i === idx); });
   }
 

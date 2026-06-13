@@ -102,3 +102,9 @@ figcaption { color: #9a9a9a; font-size: 0.9em; margin-top: 0.4rem; text-align: c
   font-size: 0.95em;
   font-weight: 600;
 }
+
+// Give the article enough trailing room that even the last section can
+// scroll up to the ToC trigger line, so the scrollspy stays exact.
+.post-content { padding-bottom: 60vh; }
+.post-content h2,
+.post-content h3 { scroll-margin-top: 90px; }
