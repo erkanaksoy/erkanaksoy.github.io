@@ -94,3 +94,11 @@ figcaption { color: #9a9a9a; font-size: 0.9em; margin-top: 0.4rem; text-align: c
 
 // Not enough side room below this width: hide it
 @media (max-width: 1300px) { .post-toc { display: none; } }
+
+// --- "Read more" link on the home post list ---
+.post-read-more {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 0.95em;
+  font-weight: 600;
+}
