@@ -47,6 +47,7 @@ photos:
     place: Ankara, Türkiye
     date: 2025
     settings: 600mm · 1/2500 · f6.3 · ISO 1600
+    ratio: portrait
   - file: /assets/photos/bird-03.jpg
     alt: Pair of hoverflies on a grass seed head
     common: Hoverflies
@@ -159,6 +160,7 @@ photos:
   background: var(--tile);
   overflow: hidden;
 }
+.fg-frame.is-portrait { aspect-ratio: 3 / 4; }
 .fg-frame img {
   width: 100%;
   height: 100%;
@@ -302,10 +304,9 @@ photos:
 <div class="fieldguide">
 
   <header class="fg-head">
-    <p class="fg-eyebrow">Field Notes</p>
     <h1 class="fg-title">Birds &amp; <em>Small Things</em></h1>
-    <p class="fg-intro">A small, rotating selection of wildlife frames — mostly birds, with the occasional hoverfly or spider. Most were taken within a short drive of Ankara: early mornings, long lenses, and a lot of patient waiting.</p>
-    <p class="fg-meta">Ankara, Türkiye&nbsp;&nbsp;·&nbsp;&nbsp;Sony APS-C&nbsp;&nbsp;·&nbsp;&nbsp;600mm telephoto / 90mm macro</p>
+    <p class="fg-intro">A small selection of wildlife frames — mostly birds, with some macro shoots.</p>
+    <p class="fg-meta">Türkiye&nbsp;&nbsp;·&nbsp;&nbsp;Sony A6700&nbsp;&nbsp;·&nbsp;&nbsp;Sony 200-600mm telephoto / Sony 90mm macro</p>
   </header>
 
   <div class="fg-grid">
@@ -319,7 +320,7 @@ photos:
             data-date="{{ p.date }}"
             data-settings="{{ p.settings }}"
             aria-label="View larger: {{ p.common }}">
-      <span class="fg-frame">
+      <span class="fg-frame{% if p.ratio == 'portrait' %} is-portrait{% endif %}">
         <img src="{{ p.file | relative_url }}" alt="{{ p.alt }}" loading="lazy" decoding="async"
              onerror="this.closest('.fg-figure').classList.add('is-pending')">
         <span class="fg-pending" aria-hidden="true">
