@@ -33,6 +33,7 @@ photos:
     place: Ankara, Türkiye
     date: 2025
     settings: 600mm · 1/2500 · f6.3 · ISO 1600
+    feature: true
   - file: /assets/photos/bird-01.jpg
     alt: Long-eared owl perched among bare winter branches
     common: Long-eared Owl
@@ -130,7 +131,7 @@ photos:
 /* ---- grid ---- */
 .fg-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: 1fr 1fr;   /* clean 2-column layout */
   gap: 1.4rem;
 }
 .fg-figure {
@@ -148,19 +149,21 @@ photos:
   color: inherit;
   border-radius: 2px;
 }
-.fg-figure.fg-feature { grid-column: span 2; }
-@media (max-width: 640px) {
-  .fg-figure.fg-feature { grid-column: span 1; }
+.fg-figure.fg-feature { grid-column: 1 / -1; }   /* span full width */
+@media (max-width: 560px) {
+  .fg-grid { grid-template-columns: 1fr; }
+  .fg-figure.fg-feature { grid-column: auto; }
 }
 
 .fg-frame {
+  display: block;
   position: relative;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4 / 5;          /* portrait tiles for the four verticals */
   background: var(--tile);
   overflow: hidden;
 }
-.fg-frame.is-portrait { aspect-ratio: 3 / 4; }
+.fg-feature .fg-frame { aspect-ratio: 3 / 2; }   /* wide tiles for the two landscapes */
 .fg-frame img {
   width: 100%;
   height: 100%;
@@ -320,7 +323,7 @@ photos:
             data-date="{{ p.date }}"
             data-settings="{{ p.settings }}"
             aria-label="View larger: {{ p.common }}">
-      <span class="fg-frame{% if p.ratio == 'portrait' %} is-portrait{% endif %}">
+      <span class="fg-frame">
         <img src="{{ p.file | relative_url }}" alt="{{ p.alt }}" loading="lazy" decoding="async"
              onerror="this.closest('.fg-figure').classList.add('is-pending')">
         <span class="fg-pending" aria-hidden="true">
