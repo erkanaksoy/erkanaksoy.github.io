@@ -89,6 +89,9 @@ photos:
   -webkit-font-smoothing: antialiased;
 }
 
+/* hide the theme's page title ("Photography") above the hero on this page */
+.post-header, .post-title, .page-heading { display: none; }
+
 /* ---- hero / masthead ---- */
 .fg-head {
   border-bottom: 1px solid var(--line);
@@ -112,18 +115,25 @@ photos:
   margin: 0 0 1.1rem;
   font-optical-sizing: auto;
 }
-.fg-title em { font-style: italic; color: var(--muted); }
-.fg-intro {
-  max-width: 46ch;
-  font-size: 1.05rem;
-  line-height: 1.6;
-  color: var(--muted);
-  margin: 0 0 1.4rem;
+.fg-title em { font-style: italic; color: inherit; }
+.fg-gear {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: .55rem .9rem;
+  margin-top: 1.3rem;
 }
-.fg-meta {
+.fg-gear-label {
+  font-family: var(--mono);
+  font-size: .7rem;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.fg-gear-text {
   font-family: var(--mono);
   font-size: .73rem;
-  letter-spacing: .12em;
+  letter-spacing: .1em;
   text-transform: uppercase;
   color: var(--ink);
 }
@@ -311,8 +321,10 @@ photos:
 
   <header class="fg-head">
     <h1 class="fg-title">Birds &amp; <em>Small Things</em></h1>
-    <p class="fg-intro">A small selection of wildlife frames — mostly birds, with some macro shoots.</p>
-    <p class="fg-meta">Türkiye&nbsp;&nbsp;·&nbsp;&nbsp;Sony A6700&nbsp;&nbsp;·&nbsp;&nbsp;Sony 200-600mm telephoto / Sony 90mm macro</p>
+    <div class="fg-gear">
+      <span class="fg-gear-label">Gear</span>
+      <span class="fg-gear-text">Türkiye&nbsp;&nbsp;·&nbsp;&nbsp;Sony A6700&nbsp;&nbsp;·&nbsp;&nbsp;Sony 200-600mm telephoto / Sony 90mm macro</span>
+    </div>
   </header>
 
   <div class="fg-grid">
