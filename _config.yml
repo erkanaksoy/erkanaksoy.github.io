@@ -7,3 +7,5 @@ show_excerpts: true
 header_pages:
   - index.md
   - about.md
+
+linkedin_url: https://www.linkedin.com/in/erkana/
