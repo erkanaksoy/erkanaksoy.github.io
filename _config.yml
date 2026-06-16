@@ -6,7 +6,7 @@ show_excerpts: true
 
 header_pages:
   - about.md
-  - feed.xml          # or however RSS appears
+  - feed.xml
   - photography.html
 
 linkedin_url: https://www.linkedin.com/in/erkana/
