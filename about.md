@@ -43,7 +43,7 @@ Away from the keyboard, I'm into **wildlife photography** — mostly birds, butt
 
 ---
 
-## Find Me 
+## Find Me
 
 - [LinkedIn](https://www.linkedin.com/in/erkana/){:target="_blank" rel="noopener noreferrer"}
 - [Instagram](https://www.instagram.com/erkan.wildlife/){:target="_blank" rel="noopener noreferrer"} — wildlife and macro photography
