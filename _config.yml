@@ -6,5 +6,6 @@ show_excerpts: true
 
 header_pages:
   - about.md
+  - photography.html
 
 linkedin_url: https://www.linkedin.com/in/erkana/
