@@ -22,15 +22,22 @@ photos:
     alt: European bee-eater perched on a flowering hawthorn branch
     common: European Bee-eater
     latin: Merops apiaster
-    place: Ankara, Türkiye
+    place: Konya, Türkiye
     date: 2025
     settings: 600mm · 1/1000 · f6.3 · ISO 400
     feature: true
+  - file: /assets/photos/bird-06.jpg
+    alt: Pair of bearded reedlings clinging to a reed stem
+    common: Bearded Reedling
+    latin: Panurus biarmicus
+    place: Ankara, Türkiye
+    date: 2025
+    settings: 600mm · 1/2500 · f6.3 · ISO 1600
   - file: /assets/photos/bird-01.jpg
     alt: Long-eared owl perched among bare winter branches
     common: Long-eared Owl
     latin: Asio otus
-    place: Ankara, Türkiye
+    place: Konya, Türkiye
     date: 2025
     settings: 367mm · 1/1000 · f7.1 · ISO 2000
   - file: /assets/photos/bird-04.jpg
@@ -40,13 +47,6 @@ photos:
     place: Ankara, Türkiye
     date: 2025
     settings: 600mm · 1/1000 · f6.3 · ISO 160
-  - file: /assets/photos/bird-06.jpg
-    alt: Pair of bearded reedlings clinging to a reed stem
-    common: Bearded Reedling
-    latin: Panurus biarmicus
-    place: Ankara, Türkiye
-    date: 2025
-    settings: 600mm · 1/2500 · f6.3 · ISO 1600
   - file: /assets/photos/bird-03.jpg
     alt: Pair of hoverflies on a grass seed head
     common: Hoverflies
@@ -58,7 +58,7 @@ photos:
     alt: Wolf spider on a dry leaf, facing the camera
     common: Wolf Spider
     latin: Lycosidae
-    place: Ankara, Türkiye
+    place: Konya, Türkiye
     date: 2025
     settings: 90mm Macro · 1/250 · f8 · ISO 1000
 ---
@@ -68,12 +68,13 @@ photos:
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
 .fieldguide {
-  --paper:   #FAFAF7;
-  --ink:     #1F2421;
-  --muted:   #6B7268;
-  --line:    #E2E0D8;
-  --tile:    #ECEAE2;
-  --accent:  #2F6F6A;   /* kingfisher teal, used sparingly */
+  /* palette tuned for a dark site theme */
+  --paper:   #15171A;   /* caption strip — sits just above page bg */
+  --ink:     #ECEAE2;   /* primary text (light on dark) */
+  --muted:   #9AA192;   /* secondary text / latin / detail */
+  --line:    #2C2F33;   /* hairlines & tile borders */
+  --tile:    #1E2125;   /* empty tile background */
+  --accent:  #5BB5AD;   /* kingfisher teal, lifted for dark bg */
 
   --display: 'Fraunces', Georgia, 'Times New Roman', serif;
   --mono:    'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
@@ -184,7 +185,7 @@ photos:
   font-size: .7rem;
   letter-spacing: .14em;
   text-transform: uppercase;
-  background: repeating-linear-gradient(45deg, var(--tile) 0 12px, #E5E3DA 12px 24px);
+  background: repeating-linear-gradient(45deg, var(--tile) 0 12px, #24282C 12px 24px);
 }
 .fg-figure.is-pending .fg-pending { display: flex; }
 .fg-figure.is-pending .fg-frame img { display: none; }
